@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+    <title type="text">FPL Point Predictor</title>
+    <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
+    <updated>2020-02-28T23:41:15+00:00</updated>
+    <id>https://example.com/</id>
+    <link rel="alternate" type="text/html" href="https://example.com/" />
+    <link rel="self" type="application/atom+xml" href="https://example.com/atom.xml" />
+    <author>
+            <name>Immanuel Idelegbagbon &amp; Stefano Puzzuoli</name>
+            <uri>https://example.com/</uri>
+            
+                <email>stefano.puzzuoli@mail.dcu.ie</email>
+            </author>
+    
+    <generator uri="https://gohugo.io/" version="0.65.3">Hugo</generator>
+        <entry>
+            <title type="text">Starting Development</title>
+            <link rel="alternate" type="text/html" href="https://example.com/posts/starting-development/" />
+            <id>https://example.com/posts/starting-development/</id>
+            <updated>2020-02-28T23:32:08+00:00</updated>
+            <published>2020-01-25T18:28:02+00:00</published>
+            <author>
+                    <name>Immanuel Idelegbagbon &amp; Stefano Puzzuoli</name>
+                    <uri>https://example.com/</uri>
+                    <email>stefano.puzzuoli@mail.dcu.ie</email>
+                    </author>
+            <summary type="html"><![CDATA[Post-exams we dive into the development stage of our project, with numerous challenges and obstacles to take on, with all the energy and enthusiasm that we can possibly have!
+Recap We left you over a month ago with our last post in which we talked about our latest deliverable which was the Functional Specification document in December.]]></summary>
+            
+                <content type="html"><![CDATA[<p>Post-exams we dive into the development stage of our project, with numerous challenges and obstacles to take on, with all the energy and enthusiasm that we can possibly have!</p>
+<h2 id="recap">Recap</h2>
+<p>We left you over a month ago with our last post in which we talked about our latest deliverable which was the Functional Specification document in December. Between then and now, we dealt with our difficult January exams while also finding our needed FPL data set and doing some profound research in multiple areas of the project such as Machine Learning, Android Development and any field in which we felt it was required.</p>
+<h2 id="data-set">Data Set</h2>
+<p>One of our main concerns before the Christmas holidays was finding a data set containing information about Fantasy Premier League Players for each gameweek, which we needed to divide in Training and Test data sets to respectfully train and test our Point Predictor Model. We had completed this step, or at least we thought we had, until post-exam season came and we dived into development only to realise then that the data set we had found was missing some key features which were crucial to create an accurate Point Predictor Model. This caused a significant setback because for a few days, we were worried that we were not going to be able to find such a data set that would have caused some serious issues in the development of the entire project.<br>
+After days of digging on the Internet to find such a set, we came to the realisation that in order to obtain a data set in the format we were looking for, we had to scrape this data directly from the official Fantasy Premier League website, which we did with a personally written Python program, allowing us to move on to the creation, training and testing of our Point Predictor Model.</p>
+<h2 id="selected-features-to-use-for-the-model">Selected Features to Use for the Model</h2>
+<p>Once we had obtained our data set of FPL players, we had to decide how many and which features we were going to use to make the point predictions each week. The data we were using contained 58 features for each player but it was clear that for a project of such scale, we had to restrict the number of values used. To do so, we performed some specific data observation and plotting of particular features to highlight relationships between certain features and the total points obtained by each player every week.<br>
+After carefully exploring and analysing various variables and values, we came to the conclusion that features we were going to use to build our model were:</p>
+<ul>
+<li>Event Points</li>
+<li>Value Form</li>
+<li>Value Season</li>
+<li>Form</li>
+<li>Ict Index</li>
+<li>Selected By Percent</li>
+</ul>
+<p>Before coming to this final decision, we did test temporary models with other values but we concluded that for a limited set of features, this was our best option.</p>
+<h2 id="creating-the-point-predictor-model">Creating the Point Predictor Model</h2>
+<p>After we had decided on the features to make use of in our Model, we created an initial Linear Regression Model to make point predictions for our FPL players using the players data-frame and we selected our training data and test data. Following we applied Cross Validation over 5 of the selected features (variables) and we set the Event Points to be the variable of which we had to predict the value for each player.<br>
+Since predicting the exact points for each player each gameweek is almost impossible, we used the Root Mean Squared Error (RSME) to evaluate the precision of our predictions. Once we had verified that our predictions were not too far off at all, we still wanted to improve the model and made some slight tweaks/modifications to increase its accuracy.<br>
+Finally, when testing the Prediction Model on the gameweek 2 of the 2019/2020 season, we obtained an RMSE of 1.9871, with which we were very satisfied, as the App will simply be a guide for Fantasy Football Managers, and not an exact precision predictor.</p>
+<h2 id="gui-and-functionality">GUI and Functionality</h2>
+<p>While doing our best to create an accurate Point Predictor Model, we had also initialised the creation of our Android Application through which these predictions will be visible to our client users.<br>
+To create such an application, we are making use of Android Studio, the official IDE used for Google&rsquo;s Android OS.<br>
+Since the GUI does not require particularly complex features (it simply displays the players and predictions in a list, aside from minor functionalities such as searching and sorting), up to this point, we created a basic App with all the visual features that we expect our final product to have, but we still have to implement all the background executions/features.</p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>We feel like we have made a significant amount of progress since we began the development of this project and our supervisor was also very satisfied with our results. Our next tasks to complete regard mainly the cloud approach we will be using to store the functionalities of our App, including as much automation as we possible can (ideally each week the predictions for the list of players are done automatically) and following we will continue to try and make our model more accurate, while also working on the GUI and its background functions. We will update you very soon on the progress made, hopefully with positive results!</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/categories/development/" term="development" label="development" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/training/" term="training" label="training" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/test/" term="test" label="test" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/machine-learning/" term="machine-learning" label="machine-learning" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/python/" term="python" label="python" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/ui/" term="UI" label="UI" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/model/" term="model" label="model" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Functional Spec</title>
+            <link rel="alternate" type="text/html" href="https://example.com/posts/functional-spec/" />
+            <id>https://example.com/posts/functional-spec/</id>
+            <updated>2020-02-28T23:31:16+00:00</updated>
+            <published>2019-12-09T23:01:13+00:00</published>
+            <author>
+                    <name>Immanuel Idelegbagbon &amp; Stefano Puzzuoli</name>
+                    <uri>https://example.com/</uri>
+                    <email>stefano.puzzuoli@mail.dcu.ie</email>
+                    </author>
+            <summary type="html"><![CDATA[We analyse our Functional Specification document, our approach to it and the final outcome.
+Recap In our last post we talked about our Proposal Presentation, how the project got approved and mentioned how our next deliverable was going to be the Functional Specification Document, which can be found here.]]></summary>
+            
+                <content type="html"><![CDATA[<p>We analyse our Functional Specification document, our approach to it and the final outcome.</p>
+<h2 id="recap">Recap</h2>
+<p>In our last post we talked about our Proposal Presentation, how the project got approved and mentioned how our next deliverable was going to be the Functional Specification Document, which can be found <a href="https://gitlab.computing.dcu.ie/idelegi2/2020-ca326-iidele-fplpredictor/blob/master/functional_spec/functional_spec.md">here</a>.</p>
+<h2 id="what-is-the-functional-specification-document">What is the Functional Specification Document?</h2>
+<p>A Functional Specification is a detailed technical description of the system to be developed. It includes a description of the problem to be addressed, a description of the proposed solution, a high-level description of system design (or potential design), and a preliminary schedule.</p>
+<h2 id="our-approach">Our Approach</h2>
+<p>Since it was our first time writing such a document for real world project, the first thing we did was try to figure out, step by step, all the headings (aside from the mandatory ones) that we wanted to include in our final Functional Spec, in a manner that would allow the understanding and outline of the project to be as clear as possible.<br>
+Once this was out of the way, we had a brainstorming session in which we thought about most of the high level diagrams and designs regarding our system. In this session we produced many important features of the Functional Spec including our UI mock-up, Architecture Diagram, Data Flow Diagram and much more.<br>
+Following we would meet regularly to discuss all the other parts of the document, reasoning about certain aspects which we hadn&rsquo;t decided on yet and clarifying topics that we maybe did not bot agree on completely, but always in a peaceful productive manner.</p>
+<p>Finally, creating the schedule was quite challenging as we were not sure how long certain development stages would take but to play it safe, we planned everything to be completed around 10 days before the official submission date, allowing us to have extra time in case we encounter unexpected difficulties.</p>
+<h2 id="the-document">The document</h2>
+<p>Once we had obtained a clear outline of the Functional Specification, we moved on to creating the document, working on some areas together and assigning some to each other individually with the other group member that would always double check the work of the other.<br>
+This phase was not particularly difficult, as most of the &ldquo;hard work&rdquo; had been completed in the previous point and this simply required a lot of time in order to lay out all our discussed ideas in a formal fashion in this document.<br>
+We managed to finish our final version a couple of days before the due date, allowing us to recharge for the next challenging phase!</p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>Completed the Functional Specification submission, our next phase is where the &ldquo;fun&rdquo; begins! Approaching is the Christmas break which we will primarily use to study for exams and recharge our batteries although we will be deeping our knowledge in various areas regarding the FPL Point Predictor in order to have more time in January when it becomes our primary focus. We plan on finding the data set of the Fantasy Premier League Players we will be using for training and testing the prediction algorithm and we also plan on having a very simple layout of our Android App before exams begin, hopefully giving us an advantage when we strongly dive into the Development phase.<br>
+We will not be posting until this phase begins, we hope you enjoy your Christmas holidays, we know we will, as the FPL Point Predictor App will be with us and our thoughts throughout this time!</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/categories/blogging/" term="blogging" label="blogging" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/functional-spec/" term="functional-spec" label="functional-spec" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/ui/" term="UI" label="UI" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Proposal Presentation</title>
+            <link rel="alternate" type="text/html" href="https://example.com/posts/proposal-presentation/" />
+            <id>https://example.com/posts/proposal-presentation/</id>
+            <updated>2020-02-28T23:30:33+00:00</updated>
+            <published>2019-11-15T14:46:35+00:00</published>
+            <author>
+                    <name>Immanuel Idelegbagbon &amp; Stefano Puzzuoli</name>
+                    <uri>https://example.com/</uri>
+                    <email>stefano.puzzuoli@mail.dcu.ie</email>
+                    </author>
+            <summary type="html"><![CDATA[We discuss our Proposal Presentation, which determined if our FPL Point Predictor project was approved or not.
+Recap In our last post we talked about the initial phase of our project, the steps we took getting it all started and mainly about what our FPL Point Predictor consists of and the Project Proposal we submitted and the upcoming Presentation required to get our project approved.]]></summary>
+            
+                <content type="html"><![CDATA[<p>We discuss our Proposal Presentation, which determined if our FPL Point Predictor project was approved or not.</p>
+<h2 id="recap">Recap</h2>
+<p>In our last post we talked about the initial phase of our project, the steps we took getting it all started and mainly about what our FPL Point Predictor consists of and the <a href="https://gitlab.computing.dcu.ie/idelegi2/2020-ca326-iidele-fplpredictor/blob/master/proposal/project_proposal.md">Project Proposal</a> we submitted and the upcoming Presentation required to get our project approved.</p>
+<h2 id="the-proposal-presentation">The Proposal Presentation</h2>
+<p>The Proposal Presentations for our group was on November 14th at 4 pm in LG25 in the Computing Building. <a href="https://www.dcu.ie/computing/people/mark-roantree.shtml">Dr. Mark Roantree</a> and <a href="https://www.dcu.ie/computing/people/monica-ward.shtml">Dr. Monica Ward</a> were the members of academic staff that were assigned to our presentation slot.</p>
+<p>We spent a few days previous to the big day to prepare the Presentation and practiced what we wanted to say so we were very confident when the day arrived. We tried to anticipate questions we would have been asked in order to avoid any surprises. We were the last group out of five four to present and I believe we did quite a good job at it. I felt like we came across very confident about what we were doing and what our plan for the entire project was. Both Mark and Monica seemed very satisfied with our presentation although there were some concerns regarding the feasibility of the App.</p>
+<p>After we presented, the lecturers did ask some questions, as mentioned above, mainly with consideration towards the viability of the completion of such a project. Some of the key topics which were tackled were our unexperience with Machine Learning applications and also the size of the project which at first glance could be seen more of a Fourth Year Project App. Following our explanation of how we had already started studying Machine Learning and Android Development in our own personal time, both Mark and Monica appeared to be satisfied with our determination and approved the project happily.</p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>For now, we are both going to continue to improve our knowledge in the Machine Learning area as we feel that it is best that we solve any unpredictable problem now that we still have lots of time, rather than encounter such issues in January when we officially begin the development, as there will not be enough time to manage certain surprises then.</p>
+<p>The next step involves the Functional Specification document which is due December 6th at 5 pm and which we will be starting very soon as it requires quite a bit of work, especially since it is the first time we both find ourselves writing such documentation. It is worth 10% of the project so these will be the first official marks going for the Third Year Project. We look forward to diving into it and will update you about the outcome in our next post!</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/categories/blogging/" term="blogging" label="blogging" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/proposal/" term="proposal" label="proposal" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/machine-learning/" term="machine-learning" label="machine-learning" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/android/" term="android" label="android" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Getting Started</title>
+            <link rel="alternate" type="text/html" href="https://example.com/posts/getting-started/" />
+            <id>https://example.com/posts/getting-started/</id>
+            <updated>2020-02-28T23:29:37+00:00</updated>
+            <published>2019-11-10T18:34:29+00:00</published>
+            <author>
+                    <name>Immanuel Idelegbagbon &amp; Stefano Puzzuoli</name>
+                    <uri>https://example.com/</uri>
+                    <email>stefano.puzzuoli@mail.dcu.ie</email>
+                    </author>
+            <summary type="html"><![CDATA[This is the just beginning of the FPL Point Predictor, since we have many proposals to make, specifications to be approved and lots of code to write.
+Progress So Far As we are still in the initialization phase of the project, we have just submitted our project proposal, which can be found here.]]></summary>
+            
+                <content type="html"><![CDATA[<p>This is the just beginning of the FPL Point Predictor, since we have many proposals to make, specifications to be approved and lots of code to write.</p>
+<h2 id="progress-so-far">Progress So Far</h2>
+<p>As we are still in the initialization phase of the project, we have just submitted our project proposal, which can be found <a href="https://gitlab.computing.dcu.ie/idelegi2/2020-ca326-iidele-fplpredictor/blob/master/proposal/project_proposal.md">here</a>.<br>
+Additionally, in these past few weeks we were also able to complete the following tasks:</p>
+<ol>
+<li>Get <a href="https://www.dcu.ie/computing/people/mark-roantree.shtml">Mark Roantree</a> as our project supervisor.</li>
+<li>Set up our <a href="https://gitlab.computing.dcu.ie/idelegi2/2020-ca326-iidele-fplpredictor/tree/master">Project Repository</a> on the DCU School of Computing Gitlab.</li>
+<li>Complete our Project Proposal as mentioned above.</li>
+<li>Set up this blog for our project.</li>
+</ol>
+<h2 id="project-proposal-and-technologies-being-used">Project Proposal and Technologies being used</h2>
+<p>Regarding our Project Proposal, this step did allow us to furthermore think about certain details and characteristics of our project. When writing said document, we were obligated to have a clear idea of the outline and technologies involved in the development of the FPL Point Predictor.<br>
+Python 3 will be the programming language used to deal with all the calculations involving the machine learning algorithm and data manipulation.<br>
+In order to perform such operations in an automated manner on each matchday, the application will utilise Jenkins, allowing continuous integration and facilitating technical aspects of continuous delivery whenever necessary.<br>
+Since dealing with such a large dataset, the statistics of the match fixtures that will allow the machine learning algorithm to try make accurate predictions will be stored in a cloud database, particularly in Google Cloud Platform, a suite of cloud computing services.<br>
+The application will be developed in Android Studio and the programming language used for the user interface and interface background tasks will be Java, due to the many advantages that it offers in Android app development.</p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>Before taking any further steps, our Project Proposal requires approval. In order to complete this step, we are required to host a presentation in which two designated lecturers will either decide if we can move on with this project or not. Our presentation will take place on November 14th and this will be further explained in another post!</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/categories/blogging/" term="blogging" label="blogging" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/machine-learning/" term="machine-learning" label="machine-learning" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/python/" term="python" label="python" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/java/" term="java" label="java" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/cloud/" term="cloud" label="cloud" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/android/" term="android" label="android" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Testing</title>
+            <link rel="alternate" type="text/html" href="https://example.com/posts/testing/" />
+            <id>https://example.com/posts/testing/</id>
+            <updated>2020-02-28T23:36:30+00:00</updated>
+            <published>2019-02-23T12:01:13+00:00</published>
+            <author>
+                    <name>Immanuel Idelegbagbon &amp; Stefano Puzzuoli</name>
+                    <uri>https://example.com/</uri>
+                    <email>stefano.puzzuoli@mail.dcu.ie</email>
+                    </author>
+            <summary type="html"><![CDATA[We analyse the different approaches used in Testing, involving mainly Unit, Instrumentation and UI, Integration and User Testing.
+Recap In our last post we talked about the huge milestone we reached after setting up the Cloud/Server aspect of our App with Backendless, involving a Serverless Computing Approach.]]></summary>
+            
+                <content type="html"><![CDATA[<p>We analyse the different approaches used in Testing, involving mainly Unit, Instrumentation and UI, Integration and User Testing.</p>
+<h2 id="recap">Recap</h2>
+<p>In our last post we talked about the huge milestone we reached after setting up the Cloud/Server aspect of our App with Backendless, involving a Serverless Computing Approach. We anticipated how we were going to move on to the Testing phase and this is exactly what we will be analysing today.</p>
+<h2 id="testing-phase">Testing Phase</h2>
+<p>Testing is the activity to check whether the actual results match the expected results and to ensure that the software system is defect free. The Testing phase is a key part of the Software Development Life Cycle (SDLC) so we took our time to do it right. Many are the different methods of testing and the ones we involved in our project were:</p>
+<ul>
+<li>Unit Testing</li>
+<li>Instrumentation and UI Testing</li>
+<li>Integration Testing</li>
+<li>User Evaluation (Testing)</li>
+</ul>
+<h2 id="unit-testing">Unit Testing</h2>
+<p>Unit Testing is the level of software testing where the individual units/ components of the software are tested. The purpose is to validate that each unit of the software performs as designed. A unit is the smallest testable part of any software. We applied our Unit tests to individual functions/methods in both Prediction Model code (Python) and in the UI frontend and UI backend code (Java) to verify that certain function calls would give us the expected results.</p>
+<h2 id="instrumentation-and-ui-testing">Instrumentation and UI Testing</h2>
+<p>When it comes to Android Applications, one of the most important types of testing is Instrumentation and UI Testing, in which tests run on a device or an emulator and in the background, the app will be installed and then a testing app will also be installed which will control your app, launching it and running UI tests as needed. We wrote and tested each individual component of our UI through this approach, to guarantee their correct functioning and to assure there where no issues with any code that had any dependency on any App context.</p>
+<h2 id="integration-testing">Integration Testing</h2>
+<p>Integration Testing is the level of software testing where individual units are combined and tested as a group. The purpose of this level of testing is to expose faults in the interaction between integrated units. To apply such testing we made use of Gitlab&rsquo;s GitLab CI (Continuous Integration) service as it automatically allows to build and test the software whenever developers push code to application. To make use of such a service, we were only required to download and install a Gitlab Runner, write a few YAML scripts and apply a few other steps, and after that, every time we push any code to our FPLPP repo, our integration testing is applied.</p>
+<h2 id="user-evaluation">User Evaluation</h2>
+<p>The user evaluation stage allowed to classify the user Experience of our Fantasy Premier League Point Predictor App. By user experience we refer to the aspect of the user interaction with the product, and more specifically how a user perceives the system before, during and after interacting with it. Since user experiences are subjective to the specific individuals, it was necessary that we conducted evaluations with the right extent, constructs, and methods to enable the data and information received from these studies to assist us in the dimension we required. To evaluate our system, we decided that a heuristic evaluation and a user evaluation of our prototype through focus groups was sufficient to provide us the information that we were looking for regarding the user experience. Through these we were able to understand the main pros and cons of our App, informing us on the areas to improve and make changes to. Some changes we did make, others we plan to make in future version releases of the App. Our heuristic evaluation can be found <a href="https://gitlab.computing.dcu.ie/idelegi2/2020-ca326-iidele-fplpredictor/blob/master/docs/Heuristic-Evalutation.odt">here</a>, while our user evaluation document can be found <a href="https://gitlab.computing.dcu.ie/idelegi2/2020-ca326-iidele-fplpredictor/blob/master/docs/User-Evaluation.odt">here</a>, both are present on our Gitlab Repository.</p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>With our testing phase completed, we are finishing up on our entire project. While we are still making minor adjustments to the App, making improvements where possible, we feel that we can now move on to the documentation phase and write up our User Manual and Technical Specification, and also create our Video Walkthrough as the 6th of March (final submission date) gets closer and closer!</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/categories/development/" term="development" label="development" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/testing/" term="testing" label="testing" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/android/" term="android" label="android" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/java/" term="java" label="java" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/python/" term="python" label="python" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">A Serverless Computing Approach</title>
+            <link rel="alternate" type="text/html" href="https://example.com/posts/a-serverless-computing-approach/" />
+            <id>https://example.com/posts/a-serverless-computing-approach/</id>
+            <updated>2020-02-28T23:32:53+00:00</updated>
+            <published>2019-02-05T19:01:13+00:00</published>
+            <author>
+                    <name>Immanuel Idelegbagbon &amp; Stefano Puzzuoli</name>
+                    <uri>https://example.com/</uri>
+                    <email>stefano.puzzuoli@mail.dcu.ie</email>
+                    </author>
+            <summary type="html"><![CDATA[We explore how we implemented a Serverless computing solution for our App with Backendless, a Mobile Backend as a Service.
+Recap In our last post, we had talked about how after the initial phases of the development, we had obtained valid data for training and testing, we had selected the features we wanted our model to be based on and we had finally created our point prediction model, while also making progress with the App UI.]]></summary>
+            
+                <content type="html"><![CDATA[<p>We explore how we implemented a Serverless computing solution for our App with Backendless, a Mobile Backend as a Service.</p>
+<h2 id="recap">Recap</h2>
+<p>In our last post, we had talked about how after the initial phases of the development, we had obtained valid data for training and testing, we had selected the features we wanted our model to be based on and we had finally created our point prediction model, while also making progress with the App UI.
+We were still analysing the specific cloud computing method to adopt, and today this is what we will be exploring.</p>
+<h2 id="backendless-serverless-computing-for-your-app">Backendless, serverless computing for your App</h2>
+<p>When planning the various steps of our project back in November/December, we had decided that we would have used a cloud computing approach to store our point predictions for each Game week and we believed, at the time, that doing so with Google Cloud Platform was our best option for such an App.<br>
+With more time though, we were able to further explore the multiple different possibilities that are available for such services and we stumbled upon Backendless, a Mobile Backend as a Service, which is serverless computing, a form of cloud computing in which the cloud provider runs and maintains all servers.</p>
+<h2 id="advantages-of-this-approach">Advantages of this approach</h2>
+<p>Using a serverless computing approach allows us developers to focus on building the logic of our backend and assume there will be physical resources to execute it. In other words, serverless doesn’t mean “without a server”, but instead “without a specific server”.<br>
+The serverless provider manages the allocation of machine resources. This means the provider ensures that functions and logic on the server are executed at a consistently fast operating speed by serving from additional servers when needed.<br>
+Serverless computing suits development teams of all sizes that are looking to build and deploy quickly without the distraction of server maintenance.</p>
+<h2 id="why-serverless-over-cloud-servers">Why Serverless Over Cloud Servers</h2>
+<p>Although our initial decision was to adopt a Cloud Servers approach with Google Cloud Platform, we decided that a Serverless solution was more satisfactory for our needs.<br>
+Just because a server is hosted in the cloud does not mean it is a serverless setup. On the contrary, many cloud server hosting services like Google Cloud Platform have a basic setup that is practically identical to keeping servers on-premises. This is because you are still responsible for all of the server setup, software maintenance, and load-balancing required. The only thing the provider covers is maintenance of the hardware itself.<br>
+Not all scaling solutions are created equal. In-house servers are said to be scalable because you can add additional servers to meet your needs as you grow.<br>
+On the other hand, serverless computing is more elastic because it enables you to both increase and decrease your machine resource usage depending on your needs, which is ideal for our needs, also with consideration of future ideas for the App.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Choosing the server architecture that best fits your business needs can a complicated task. All solutions vary in one way or more between each other and it is not possible to say which is best, instead you can only decide which is more adequate for your needs.<br>
+After careful analysis and thought, we decided that a Serverless approach was our best choice.<br>
+After making this decision and setting everything up appropriately, we were able to save our point predictions table on Backendless, retrieve it from the App, and we were finally able to see a temporary functioning version of our App, which was satisfactory to say the least!</p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>Now that we have sorted out the Cloud/Server aspect of our FPL Point Predictor App, we feel like a huge weight has been lifted from our shoulders since we had some experience in this area, but not much. With the App running and functioning, the next step in the development is to focus on the operational functionality part (better automation) and then consider all aspects of testing: unit, integration, user.<br>
+We will get back to you with a new post very soon, hopefully with the development aspect of the project fully complete!</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/categories/development/" term="development" label="development" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/cloud/" term="cloud" label="cloud" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/mbas/" term="MBAS" label="MBAS" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/serverless/" term="serverless" label="serverless" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/ui/" term="UI" label="UI" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/server/" term="server" label="server" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+</feed>

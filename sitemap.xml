@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://example.com/categories/</loc>
+    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/development/</loc>
+    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/machine-learning/</loc>
+    <lastmod>2020-02-28T23:32:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/model/</loc>
+    <lastmod>2020-02-28T23:32:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/</loc>
+    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/python/</loc>
+    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/starting-development/</loc>
+    <lastmod>2020-02-28T23:32:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/</loc>
+    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/test/</loc>
+    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/training/</loc>
+    <lastmod>2020-02-28T23:32:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/ui/</loc>
+    <lastmod>2020-02-28T23:32:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/categories/blogging/</loc>
+    <lastmod>2020-02-28T23:31:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/functional-spec/</loc>
+    <lastmod>2020-02-28T23:31:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/functional-spec/</loc>
+    <lastmod>2020-02-28T23:31:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/android/</loc>
+    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/proposal/</loc>
+    <lastmod>2020-02-28T23:30:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/proposal-presentation/</loc>
+    <lastmod>2020-02-28T23:30:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/cloud/</loc>
+    <lastmod>2020-02-28T23:32:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/getting-started/</loc>
+    <lastmod>2020-02-28T23:29:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/java/</loc>
+    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/about/</loc>
+    <lastmod>2020-02-28T23:26:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/about/</loc>
+    <lastmod>2020-02-28T23:26:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/fantasy-football/</loc>
+    <lastmod>2020-02-28T23:26:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/</loc>
+    <lastmod>2020-02-28T23:26:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/testing/</loc>
+    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/testing/</loc>
+    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/a-serverless-computing-approach/</loc>
+    <lastmod>2020-02-28T23:32:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/mbas/</loc>
+    <lastmod>2020-02-28T23:32:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/server/</loc>
+    <lastmod>2020-02-28T23:32:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/serverless/</loc>
+    <lastmod>2020-02-28T23:32:53+00:00</lastmod>
+  </url>
+  
+</urlset>

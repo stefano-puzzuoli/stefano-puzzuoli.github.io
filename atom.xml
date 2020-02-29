@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
     <title type="text">FPL Point Predictor</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-02-28T23:41:15+00:00</updated>
+    <updated>2020-02-29T12:41:47+00:00</updated>
     <id>https://example.com/</id>
     <link rel="alternate" type="text/html" href="https://example.com/" />
     <link rel="self" type="application/atom+xml" href="https://example.com/atom.xml" />
@@ -330,6 +330,89 @@ The application will be developed in Android Studio and the programming language
                             
                             
                                 <category scheme="https://example.com/tags/android/" term="android" label="android" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Final Documentation</title>
+            <link rel="alternate" type="text/html" href="https://example.com/posts/final-documentation/" />
+            <id>https://example.com/posts/final-documentation/</id>
+            <updated>2020-02-29T12:41:09+00:00</updated>
+            <published>2019-03-01T11:02:13+00:00</published>
+            <author>
+                    <name>Immanuel Idelegbagbon &amp; Stefano Puzzuoli</name>
+                    <uri>https://example.com/</uri>
+                    <email>stefano.puzzuoli@mail.dcu.ie</email>
+                    </author>
+            <summary type="html"><![CDATA[We analyse the different approaches used in Testing, involving mainly Unit, Instrumentation and UI, Integration and User Testing.
+Recap In our last post we talked about the huge milestone we reached after setting up the Cloud/Server aspect of our App with Backendless, involving a Serverless Computing Approach.]]></summary>
+            
+                <content type="html"><![CDATA[<p>We analyse the different approaches used in Testing, involving mainly Unit, Instrumentation and UI, Integration and User Testing.</p>
+<h2 id="recap">Recap</h2>
+<p>In our last post we talked about the huge milestone we reached after setting up the Cloud/Server aspect of our App with Backendless, involving a Serverless Computing Approach. We anticipated how we were going to move on to the Testing phase and this is exactly what we will be analysing today.</p>
+<h2 id="testing-phase">Testing Phase</h2>
+<p>Testing is the activity to check whether the actual results match the expected results and to ensure that the software system is defect free. The Testing phase is a key part of the Software Development Life Cycle (SDLC) so we took our time to do it right. Many are the different methods of testing and the ones we involved in our project were:</p>
+<ul>
+<li>Unit Testing</li>
+<li>Instrumentation and UI Testing</li>
+<li>Integration Testing</li>
+<li>User Evaluation (Testing)</li>
+</ul>
+<h2 id="unit-testing">Unit Testing</h2>
+<p>Unit Testing is the level of software testing where the individual units/ components of the software are tested. The purpose is to validate that each unit of the software performs as designed. A unit is the smallest testable part of any software. We applied our Unit tests to individual functions/methods in both Prediction Model code (Python) and in the UI frontend and UI backend code (Java) to verify that certain function calls would give us the expected results.</p>
+<h2 id="instrumentation-and-ui-testing">Instrumentation and UI Testing</h2>
+<p>When it comes to Android Applications, one of the most important types of testing is Instrumentation and UI Testing, in which tests run on a device or an emulator and in the background, the app will be installed and then a testing app will also be installed which will control your app, launching it and running UI tests as needed. We wrote and tested each individual component of our UI through this approach, to guarantee their correct functioning and to assure there where no issues with any code that had any dependency on any App context.</p>
+<h2 id="integration-testing">Integration Testing</h2>
+<p>Integration Testing is the level of software testing where individual units are combined and tested as a group. The purpose of this level of testing is to expose faults in the interaction between integrated units. To apply such testing we made use of Gitlab&rsquo;s GitLab CI (Continuous Integration) service as it automatically allows to build and test the software whenever developers push code to application. To make use of such a service, we were only required to download and install a Gitlab Runner, write a few YAML scripts and apply a few other steps, and after that, every time we push any code to our FPLPP repo, our integration testing is applied.</p>
+<h2 id="user-evaluation">User Evaluation</h2>
+<p>The user evaluation stage allowed to classify the user Experience of our Fantasy Premier League Point Predictor App. By user experience we refer to the aspect of the user interaction with the product, and more specifically how a user perceives the system before, during and after interacting with it. Since user experiences are subjective to the specific individuals, it was necessary that we conducted evaluations with the right extent, constructs, and methods to enable the data and information received from these studies to assist us in the dimension we required. To evaluate our system, we decided that a heuristic evaluation and a user evaluation of our prototype through focus groups was sufficient to provide us the information that we were looking for regarding the user experience. Through these we were able to understand the main pros and cons of our App, informing us on the areas to improve and make changes to. Some changes we did make, others we plan to make in future version releases of the App. Our heuristic evaluation can be found <a href="https://gitlab.computing.dcu.ie/idelegi2/2020-ca326-iidele-fplpredictor/blob/master/docs/Heuristic-Evalutation.odt">here</a>, while our user evaluation document can be found <a href="https://gitlab.computing.dcu.ie/idelegi2/2020-ca326-iidele-fplpredictor/blob/master/docs/User-Evaluation.odt">here</a>, both are present on our Gitlab Repository.</p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>With our testing phase completed, we are finishing up on our entire project. While we are still making minor adjustments to the App, making improvements where possible, we feel that we can now move on to the documentation phase and write up our User Manual and Technical Specification, and also create our Video Walkthrough as the 6th of March (final submission date) gets closer and closer!</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/categories/development/" term="development" label="development" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/testing/" term="testing" label="testing" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/android/" term="android" label="android" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/java/" term="java" label="java" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/python/" term="python" label="python" />
                             
                         
                     

@@ -4,12 +4,12 @@
   
   <url>
     <loc>https://example.com/categories/</loc>
-    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+    <lastmod>2020-02-29T12:41:09+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://example.com/categories/development/</loc>
-    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+    <lastmod>2020-02-29T12:41:09+00:00</lastmod>
   </url>
   
   <url>
@@ -24,12 +24,12 @@
   
   <url>
     <loc>https://example.com/posts/</loc>
-    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+    <lastmod>2020-02-29T12:41:09+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://example.com/tags/python/</loc>
-    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+    <lastmod>2020-02-29T12:41:09+00:00</lastmod>
   </url>
   
   <url>
@@ -39,12 +39,12 @@
   
   <url>
     <loc>https://example.com/tags/</loc>
-    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+    <lastmod>2020-02-29T12:41:09+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://example.com/tags/test/</loc>
-    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+    <lastmod>2020-02-29T12:41:09+00:00</lastmod>
   </url>
   
   <url>
@@ -74,7 +74,7 @@
   
   <url>
     <loc>https://example.com/tags/android/</loc>
-    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+    <lastmod>2020-02-29T12:41:09+00:00</lastmod>
   </url>
   
   <url>
@@ -99,7 +99,7 @@
   
   <url>
     <loc>https://example.com/tags/java/</loc>
-    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+    <lastmod>2020-02-29T12:41:09+00:00</lastmod>
   </url>
   
   <url>
@@ -123,12 +123,17 @@
   </url>
   
   <url>
-    <loc>https://example.com/posts/testing/</loc>
-    <lastmod>2020-02-28T23:36:30+00:00</lastmod>
+    <loc>https://example.com/posts/final-documentation/</loc>
+    <lastmod>2020-02-29T12:41:09+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://example.com/tags/testing/</loc>
+    <lastmod>2020-02-29T12:41:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/testing/</loc>
     <lastmod>2020-02-28T23:36:30+00:00</lastmod>
   </url>
   

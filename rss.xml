@@ -21,15 +21,15 @@
             <webMaster>stefano.puzzuoli@mail.dcu.ie (Immanuel Idelegbagbon &amp; Stefano Puzzuoli)</webMaster>
         
         
-        <lastBuildDate>Sat, 29 Feb 2020 18:05:36 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 29 Feb 2020 18:10:10 +0000</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://example.com/rss.xml" />
         
         
             <item>
                 <title>FPLPP Complete!</title>
-                <link>https://example.com/posts/fplpp-completed/</link>
-                <guid isPermaLink="true">https://example.com/posts/fplpp-completed/</guid>
+                <link>https://example.com/posts/fplpp-complete/</link>
+                <guid isPermaLink="true">https://example.com/posts/fplpp-complete/</guid>
                 <pubDate>Sat, 29 Feb 2020 15:04:25 +0000</pubDate>
                 
                     <author>stefano.puzzuoli@mail.dcu.ie (Immanuel Idelegbagbon &amp; Stefano Puzzuoli)</author>

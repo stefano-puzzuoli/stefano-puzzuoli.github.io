@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
     <title type="text">FPL Point Predictor</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2020-02-29T13:50:44+00:00</updated>
+    <updated>2020-02-29T13:54:25+00:00</updated>
     <id>https://example.com/</id>
     <link rel="alternate" type="text/html" href="https://example.com/" />
     <link rel="self" type="application/atom+xml" href="https://example.com/atom.xml" />
@@ -32,18 +32,18 @@ Recap In our previous post we discussed how we completed the various testing met
             
                 <content type="html"><![CDATA[<p>Completed the development stage, we finish off with the final documentation documents, the User manual and the Technical Specification.</p>
 <h2 id="recap">Recap</h2>
-<p>In our previous post we discussed how we completed the various testing methods adopted in our project, assuring (as much as possible) that everything works and runs correctly. After we made some minor additional chnages and fixes, we can say that the development stage is completed and we were able to move on to the final official documentation, with the User manual and the Technical Specification which we analyse in this post.</p>
+<p>In our previous post we discussed how we completed the various testing methods adopted in our project, assuring (as much as possible) that everything works and runs correctly. After we made some minor additional changes and fixes, we can say that the development stage is completed and we were able to move on to the final official documentation, with the User manual and the Technical Specification which we analyse in this post.</p>
 <h2 id="user-manual">User manual</h2>
-<p>The User manual consists of an instruction guide on how to use the Fantasy Premier League Point Predictor App. It includes a step by step guide on how to use the product&rsquo;s major components and is be written for our targted users and not necessarily a technical audience. Since our App is not very difficult to use and mainly consists of a single layout page in which players and their corresponding predictions for the upcoming gameweek are listed, writing the user manual was not very difficult. Additionally, to make the user manual even more user friendly and to simplify our explanations, we included numerous screenshots to help conceptualize the components and actions that were being clarified, as we believe that visualising certain features can render easier the understanding of such concepts.</p>
+<p>The User manual consists of an instruction guide on how to use the Fantasy Premier League Point Predictor App. It includes a step by step guide on how to use the product&rsquo;s major components and is written for our targeted users and not necessarily a technical audience. Since our App is not very difficult to use and mainly consists of a single layout page in which players and their corresponding predictions for the upcoming gameweek are listed, writing the user manual was not very difficult. Additionally, to make the user manual even more user friendly and to simplify our explanations, we included numerous screenshots to help conceptualize the components and actions that were being clarified, as we believe that visualising certain features can render easier the understanding of such concepts.</p>
 <h2 id="technical-specification">Technical Specification</h2>
-<p>The Technical Specifcation consists of a detailed design document, which reflects both our initial design and our current design, incorporating any major changes we made after the first initial systems design, presented in the Functional Specification.<br>
-Although we already knew that we had changed numerous design aspects from what we had initially planned, this document helped us highlight the various modifications we made throughout the Software Development Life Cycle, showing that very rarely everything goes according to the plan, making us percieve extensively how many advantages agile approaches have when it comes to Software Development. Here we will list just some of the alterations that occured in contrast with our initial design plan:</p>
+<p>The Technical Specification consists of a detailed design document, which reflects both our initial design and our current design, incorporating any major changes we made after the first initial systems design, presented in the Functional Specification.<br>
+Although we already knew that we had changed numerous design aspects from what we had initially planned, this document helped us highlight the various modifications we made throughout the Software Development Life Cycle, showing that very rarely everything goes according to the plan, making us perceive extensively how many advantages agile approaches have when it comes to Software Development. Here we will list just some of the alterations that occured in contrast with our initial design plan:</p>
 <ul>
 <li>Used only season 2018/2019 and current season 2019/2020 data to train the prediction model (initially wanted to include season 2017/2018 too)</li>
 <li>Players can only be visualised in a single list including all players (initially wanted to divide players by position)</li>
 <li>Used Cloud Serverless Computing for Server/Cloud aspect of App (initially planned on using Cloud Infrastructure as a Service Computing)</li>
 </ul>
-<p>With these there are many more situations in which we had to make certain changes due to inconveniences or issues encountered. Overall, this is all documented in the Technical Specifcation document, from which, honestly we also learned a lot.</p>
+<p>With these there are many more situations in which we had to make certain changes due to inconveniences or issues encountered. Overall, this is all documented in the Technical Specification document, from which, honestly we also learned a lot.</p>
 <h2 id="whats-next">What&rsquo;s next?</h2>
 <p>We are done! Finished the final documentation, everything is complete. We want to write one last post in which we will briefly talk about our final product, we will be back soon, stay posted!</p>
 ]]></content>

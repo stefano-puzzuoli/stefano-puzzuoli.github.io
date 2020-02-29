@@ -21,10 +21,44 @@
             <webMaster>stefano.puzzuoli@mail.dcu.ie (Immanuel Idelegbagbon &amp; Stefano Puzzuoli)</webMaster>
         
         
-        <lastBuildDate>Sat, 29 Feb 2020 13:54:25 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 29 Feb 2020 18:00:57 +0000</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://example.com/rss.xml" />
         
+        
+            <item>
+                <title>FPLPP Complete!</title>
+                <link>https://example.com/posts/fplpp-completed/</link>
+                <guid isPermaLink="true">https://example.com/posts/fplpp-completed/</guid>
+                <pubDate>Sat, 29 Feb 2020 15:04:25 +0000</pubDate>
+                
+                    <author>stefano.puzzuoli@mail.dcu.ie (Immanuel Idelegbagbon &amp; Stefano Puzzuoli)</author>
+                
+                
+                
+                    <description><![CDATA[<p>We analyse the overall result of our Fantasy Premier League Point Predictor App, after months of hard work and coding.</p>
+<h2 id="recap">Recap</h2>
+<p>Just a few days ago we talked about how we had completed the final documentation with our User manual and our Technical Specification and, we had anticipated how we were going to write one last post about the project, since we felt like it was necessary, to end a great chapter of a great project and experience.</p>
+<h2 id="lessons-learned">Lessons learned</h2>
+<p>Throughout these past few months, it almost goes without saying that there were some difficult stressful times when it came to this project, especially when the project tasks overlapped with other modules, but overall, we also must say that this Third Year Project has taught us so much in so many different ways and areas. For the first time in our college experiences we felt like we were working on a &ldquo;real&rdquo; project, a product that other people would actually want to use and who knows, in some cases maybe also pay for. This was something very different than what we would generally be tackling and I believe that CA326 (Third Year Project) is a module that can really help form students, forcing them to maybe leave their comfort zones and take on a challenge/project that requires months of planning and hard work. As mentioned earlier, the challenges were numerous but we can easily say that we would do it all again.</p>
+<h2 id="fplpp-final-product">FPLPP final product</h2>
+<p>Overall we were very satisfied with the final result of our Fantasy Premier League Point Predictor App. Looking back at when we started this project, we had very little experience in the Machine Learning area and in Android Development, and looking at the App we were able to develop in just a few months makes us feel very proud and satisfied. To think our App makes predictions each gameweek of the Premier League and is able to maintain a RMSE (Root Mean Square Error) below 2.5 each week is something we still can&rsquo;t describe. We actually realised how impressive our FPLPP App is over the past weekend, when we both made use of the App when selecting our lineups for our personal Fantasy Football Leagues and finished 1st (out of 8 players) and 3rd (out of 11 players), showing how this App could really assist Fantasy Premier League Managers in their weekly choices.</p>
+<h2 id="whats-next">What&rsquo;s next?</h2>
+<p>After months of writing blogs, this time there is not really much that is next. We will be submitting the project on the 6th of March and we will be presenting our demo on the 10th of March, hopefully both with great results. We will then both have around 3 weeks off before we start our INTRA, which will definitely be full of surprises and interesting adventures.<br>
+Finally, we would both like to thank all of you for following us in this adventure, and if any of you need help in your Fantasy Football League decisions, just search for &ldquo;FPL Point Predictor&rdquo; in the Google Play Store and you will be sure to win your League :D</p>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Final Documentation</title>
@@ -51,7 +85,7 @@ Although we already knew that we had changed numerous design aspects from what w
 </ul>
 <p>With these there are many more situations in which we had to make certain changes due to inconveniences or issues encountered. Overall, this is all documented in the Technical Specification document, from which, honestly we also learned a lot.</p>
 <h2 id="whats-next">What&rsquo;s next?</h2>
-<p>We are done! Finished the final documentation, everything is complete. We want to write one last post in which we will briefly talk about our final product, we will be back soon, stay posted!</p>
+<p>We are done! Finished the final documentation, everything is complete. We want to write one last post in which we will briefly talk about the overall project. We will be back soon, stay posted!</p>
 ]]></description>
                 
                 

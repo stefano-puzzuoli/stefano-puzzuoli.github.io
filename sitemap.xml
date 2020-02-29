@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://example.com/posts/fplpp-completed/</loc>
+    <lastmod>2020-02-29T18:00:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/</loc>
+    <lastmod>2020-02-29T18:00:21+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://example.com/categories/blogging/</loc>
     <lastmod>2020-02-28T11:02:13+00:00</lastmod>
   </url>
@@ -19,11 +29,6 @@
   
   <url>
     <loc>https://example.com/tags/manual/</loc>
-    <lastmod>2020-02-28T11:02:13+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://example.com/posts/</loc>
     <lastmod>2020-02-28T11:02:13+00:00</lastmod>
   </url>
   
